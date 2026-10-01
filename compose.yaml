@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: agile-cicd-app:latest
+    container_name: agile-cicd-web
+    ports:
+      - "5001:5000"
+    restart: unless-stopped
